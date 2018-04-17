@@ -1,0 +1,27 @@
+{
+  "name": "babel-plugin-transform-replace-via-es-env",
+  "version": "1.0.2",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/generator": "^7.0.0-beta.44",
+    "babel-plugin-transform-minify-booleans": "^6.9.1",
+    "babel-plugin-transform-remove-via-props": "^1.0.1",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rochappy/babel-plugin-transform-replace-via-es-env.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rochappy/babel-plugin-transform-replace-via-es-env/issues"
+  },
+  "homepage": "https://github.com/rochappy/babel-plugin-transform-replace-via-es-env#readme"
+}
