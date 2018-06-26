@@ -18,7 +18,8 @@ module.exports = () => {
                 const { expression } = path.node;
                 if (path.parent.type === 'Program' &&
                     _.get(expression, 'callee.object.name') === 'via' &&
-                    _.get(expression, 'callee.property.name') === 'register'
+                    _.get(expression, 'callee.property.name') === 'register' &&
+                    (_.get(expression, 'arguments[1].properties[0].key.name') === 'props' || _.get(expression, 'arguments[1].properties[1].key.name') === 'props' ||  _.get(expression, 'arguments[1].properties[2].key.name') === 'props')
                 ) {
                     const transform = babel.transform(generate(path.node).code, {
                         plugins: ['transform-remove-via-props'],
